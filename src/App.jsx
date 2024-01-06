@@ -1,13 +1,19 @@
 
 import './App.css'
-
+import Navbar from './component/Navbar'
+import Home from './component/Home'
+import Services from './component/Services'
+import About from './component/About'
+import Menu from './component/Menu'
 function App() {
  
   return (
   <>
-      <h1 className="text-4xl font-bold ">
-        Hello there !
-      </h1>
+      <Navbar/>
+      <Home/>
+      <Services/>
+      <About/>
+      <Menu/>
   </>
   )
 }
