@@ -28,14 +28,14 @@ const Services =() =>  {
       ];
 
     return (
-      <div className='md:px-14 px-14 py-16 max-w-screen-2xl max-auto'>
+      <div className='md:px-14 px-14 py-16 max-w-screen-2xl max-auto bg-white' id='service'>
        <div className="text-center my-8">
             <h2 className='text-4xl text-neutralDGrey font-semibold mb-2'> Our Clients
             </h2>
             <p className='text-neutralGrey '> We have been working with some of the best restaurannt to deliver quality services</p>
        
             {/* The companies logo we are working with  */}
-            <div className="my-10 flex flex-wrap justify-between items-center gap-8">
+            <div className='px-4 flex items-center justify-between ml-20 lg:px-20 max-w-screen-2xl m-auto my-12 bg-white'>
                     <img src={Logo} alt="" className="h-16 w-18" /> 
                     <img src={Food} alt="" className="h-16 w-16" />
                     <img src={Cassava} alt="" className="h-16 w-16" />

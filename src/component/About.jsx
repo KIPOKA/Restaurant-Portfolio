@@ -9,17 +9,15 @@ const About =() =>  {
     
 
     return (
-      <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8'>
+      <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 bg-white' id='about'>
         <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-
-        
                 <div >
                     <div >
                         <img src={Cassava} alt="" className="hover:animate-custom-bounce"/>
                     </div>
                 </div>
                 <div className="md:w-3/5 mx-auto">
-                    <h2 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5'>
+                    <h2 className='text-4xl text-neutralDGrey font-semibold md:w-4/5'>
                         The unseen of testing nice food
                     </h2>
                     <p className='md:w-3/4 text-sm neutralGrey mb-8'>
@@ -33,27 +31,19 @@ const About =() =>  {
                 </div>
                 </div>
                 
-                <div className='rounded-corner'>
-               
-               
+                <div className='rounded-corner'> 
                     <div className="md:w-1/2 mx-auto">
 
                     <h2 className='text-4xl md:text-3xl text-black font-semibold mb-4 md:w-4/5'>
                         Helping small business to develop
-                        </h2>
-                        
-                        
+                        </h2>  
                         <p className='text-black text-sm md:text-base mb-4 md:w-4/5'>
                         Uncover the unseen delights of testing nice food, 
                         where each dish is a masterpiece waiting to be discovered.
-                        </p>
-                        
-                        
-                    </div>
-                    </div>
-                  
-
+                        </p> 
+        </div>
     </div>
+</div>
     ) 
 }
 

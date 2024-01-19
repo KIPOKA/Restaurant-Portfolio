@@ -2,15 +2,21 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../assets/logo.png'
 import { Link } from 'react-scroll';
 import {FaXmark, FaBars} from 'react-icons/fa6'
+import Login from '../authentication/Login';
 
 const Navbar = ()=> {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky]= useState(false);
+    const [isLoginOpen, setLoginOpen] = useState(false);
+    const [openModal, setOpenModal] = useState(false);
 
     //set toggle menu 
     const toggleMenu=()=>{
             setIsMenuOpen(!isMenuOpen);
     }
+    const toggleLogin = () => {
+        setLoginOpen(!isLoginOpen);
+      };
 
     useEffect(()=>{
         const handleScroll=()=>{
@@ -31,9 +37,9 @@ const Navbar = ()=> {
         {link:"Home", path:"home"},
         {link:"Service", path:"service"},
         {link:"About", path:"about"},
-        {link:"Menu", path:"menu"},
-        {link:"Testimonial", path:"testimonial"},
-        {link:"Contact", path:"contact"} 
+        {link:"Menu", path:"menu"},  
+        {link: 'Blog', path: "blog"},
+        {link:"Contact", path:"contact"},
     ]
   
     return (
@@ -56,8 +62,10 @@ const Navbar = ()=> {
                    {/* Button for large devises */}
 
                    <div className='space-x-12 hidden lg:flex items-center'>
-                    <a href="/" className='hidden lg:flex items-center  font-bold text-xl text-other hover:text-gray900'>Login</a>
-                    <button 
+                    <button className='hidden lg:flex items-center  font-bold text-xl text-other hover:text-gray900 curser-pointer'>Login</button>
+                            
+
+                              <button 
                     className='bg-other text-white 
                                 py-2 px-4 transition-all 
                                 duration-300 rounded
@@ -100,7 +108,11 @@ const Navbar = ()=> {
                         }
                 </div>
             </nav>
+            
       </header>
+
+
+                        
     ) 
 }
 

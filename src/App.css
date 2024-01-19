@@ -7,21 +7,38 @@ header{
   z-index: 10001 !important;
 }
 .btn-primary{
+  @apply  py-3 bg-other
+   text-white transition-all 
+   px-12 duration-300 
+   rounded hover:-translate-y-4 
+   hover:bg-brandPrimary 
+  ml-11
+ 
+
+}
+.btn-login{
   @apply py-3 
-          px-8 bg-other 
+          px-8 bg-brandPrimary
           text-white  
           transition-all 
-          duration-300 rounded
-          hover:-translate-y-4 
-          hover:bg-brandPrimary 
+          duration-300 rounded 
+          hover:bg-other
           mb-4
 }
+
 .rounded-corner {
-  @apply px-4 lg:px-14 max-w-screen-2xl mx-auto bg-other py-16 rounded-tl-full rounded-br-full;
-}
+  @apply px-4 
+         lg:px-14 
+         max-w-screen-2xl 
+         mx-auto bg-other py-16 
+         rounded-tl-full 
+         rounded-br-full;
+} 
 
 .rounded-c {
-  @apply  bg-white py-16 rounded-tl-full rounded-br-full;
+  @apply  bg-white py-16 
+          rounded-tl-full 
+          rounded-br-full;
 }
 .text-link{
   @apply inline-flex
